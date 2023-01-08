@@ -13,3 +13,7 @@ def get_gender_users(data:dict) -> list:
     Returns:
         list: users get gender list
     """
+    arr=[]
+    for i in data["results"] :
+        arr.append(i['email'])
+    return arr
